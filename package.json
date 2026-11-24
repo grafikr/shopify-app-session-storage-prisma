@@ -16,5 +16,6 @@
   "peerDependencies": {
     "@shopify/shopify-api": "^15.0.0",
     "@shopify/shopify-app-session-storage": "^7.0.0"
-  }
+  },
+  "version": "1.0.0-test.0"
 }
