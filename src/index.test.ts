@@ -1,4 +1,4 @@
-import { Session } from '@grafikr/shopify-app-remix';
+import { Session } from '@shopify/shopify-api';
 import { describe, expect, it } from 'bun:test';
 import { MissingSessionTableError, PrismaSessionStorage, type SessionDelegate, type SessionRow } from './index.ts';
 

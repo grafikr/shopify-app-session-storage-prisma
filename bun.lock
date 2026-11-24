@@ -4,22 +4,43 @@
   "workspaces": {
     "": {
       "name": "@grafikr/shopify-app-session-storage-prisma",
-      "dependencies": {
-        "@grafikr/shopify-app-remix": "link:../shopify-app-remix",
-      },
       "devDependencies": {
+        "@shopify/shopify-api": "^15.1.1",
+        "@shopify/shopify-app-session-storage": "^7.0.3",
         "@types/bun": "latest",
+      },
+      "peerDependencies": {
+        "@shopify/shopify-api": "^15.0.0",
+        "@shopify/shopify-app-session-storage": "^7.0.0",
       },
     },
   },
   "packages": {
-    "@grafikr/shopify-app-remix": ["@grafikr/shopify-app-remix@link:../shopify-app-remix", {}],
+    "@shopify/admin-api-client": ["@shopify/admin-api-client@2.0.1", "", { "dependencies": { "@shopify/graphql-client": "^2.0.1" } }, "sha512-s9Ysgq5we9QI5XYFkOxLX2Sj6F1I/S+f/PDC7WolaELzDhyjvFgR5d68JQDpgrGc8a8uvwzS/OuiXvybUU6sXw=="],
+
+    "@shopify/graphql-client": ["@shopify/graphql-client@2.0.1", "", {}, "sha512-rMWnql45haEQdVnz62azY6yKt67W2jNgyuYLb6cJc6GuQzEp3LNgIUuQRuroGrF0rklt/ZxqPWS2g013ci3lWQ=="],
+
+    "@shopify/shopify-api": ["@shopify/shopify-api@15.1.2", "", { "dependencies": { "@shopify/admin-api-client": "^2.0.1", "@shopify/graphql-client": "^2.0.1", "@shopify/storefront-api-client": "^2.0.1", "compare-versions": "^6.1.1", "isbot": "^5.2.2", "jose": "^5.9.6", "lossless-json": "^4.3.3", "tslib": "^2.8.1" } }, "sha512-28pfkdaESo4ff6J81BuTNaAYSs0LLVKbWO751YQRz/mJRyT3vQojAXbS2SOJusHm00kuplmAIwujlUuw6mz2nA=="],
+
+    "@shopify/shopify-app-session-storage": ["@shopify/shopify-app-session-storage@7.0.4", "", { "peerDependencies": { "@shopify/shopify-api": "^15.0.0" } }, "sha512-lM8hY9IO9lN5k4Q9EdqbkATdN51+TuHt+YZ0hmI8pTpQnQ5cO7Iako5NyEOWseWV/Nl8btbjYPCWMA1xS0H3RQ=="],
+
+    "@shopify/storefront-api-client": ["@shopify/storefront-api-client@2.0.1", "", { "dependencies": { "@shopify/graphql-client": "^2.0.1" } }, "sha512-GsEb5L3y8ffqWHr7LPyrs8tFtfZJPlyC1kS3YClGQXX1eWS3HqWysvMwnEiXbYwCA0pUkthvAcqLZj/xXx3wCQ=="],
 
     "@types/bun": ["@types/bun@1.4.5", "", { "dependencies": { "bun-types": "1.4.5" } }, "sha512-DpgwNI9z0L1S0gtb45QLCWgwCUcMLnsHYMJHQvpNj7erGiCGBvpggltAIeARrtobNMKMuy0UP7i56tKKgwFs/Q=="],
 
     "@types/node": ["@types/node@26.6.6", "", { "dependencies": { "undici-types": "~8.9.0" } }, "sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog=="],
 
     "bun-types": ["bun-types@1.4.5", "", { "dependencies": { "@types/node": "*", "undici-types": "*" } }, "sha512-ECHn+9dhL3wv0G6u0+7dQvrnaimXiRDxxerYBmhTaLyJEEuvTPWk2Fye3XIf5Y++JIIiHKfQw4Z7V5D8KuiXbg=="],
+
+    "compare-versions": ["compare-versions@6.1.1", "", {}, "sha512-4hm4VPpIecmlg59CHXnRDnqGplJFrbLG4aFEl5vl6cK1u76ws3LLvX7ikFnTDl5vo39sjWD6AaDPYodJp/NNHg=="],
+
+    "isbot": ["isbot@5.2.3", "", {}, "sha512-e8gGz3VzAuImtTMnB5PqNRRWGAswObTc+X+X5a8PttKT78VSSFec98w9ZwUoy6jJdlvJkVdLiN+WMgA8TewoZg=="],
+
+    "jose": ["jose@5.10.0", "", {}, "sha512-s+3Al/p9g32Iq+oqXxkW//7jk2Vig6FF1CFqzVXoTUXt2qz89YWbL+OwS17NFYEvxC35n0FKeGO2LGYSxeM2Gg=="],
+
+    "lossless-json": ["lossless-json@4.3.4", "", {}, "sha512-zfmBtt+IgL7aiem9qNhAmW8/kZOVzA0Y219UNj/FN7p21hQ4ZOghT4y9FzxQAm/64e4wi4jR7lBXUXy2IrjaMA=="],
+
+    "tslib": ["tslib@2.9.1", "", {}, "sha512-a4Ux9VKuIMHsOS7ENbEq6hK2ZGYIT27Rtl0E4eD9KqwxhKiQeMZE/9xb3IdYwWaSOyIBQLExhQgXDTYoiCxnWA=="],
 
     "undici-types": ["undici-types@8.9.0", "", {}, "sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg=="],
   }

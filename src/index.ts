@@ -1,4 +1,5 @@
-import { Session, type SessionStorage } from '@grafikr/shopify-app-remix';
+import { Session } from '@shopify/shopify-api';
+import type { SessionStorage } from '@shopify/shopify-app-session-storage';
 
 export interface SessionRow {
   id: string;

@@ -8,10 +8,13 @@
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
-    "@grafikr/shopify-app-remix": "link:../shopify-app-remix"
-  },
   "devDependencies": {
+    "@shopify/shopify-api": "^15.1.1",
+    "@shopify/shopify-app-session-storage": "^7.0.3",
     "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "@shopify/shopify-api": "^15.0.0",
+    "@shopify/shopify-app-session-storage": "^7.0.0"
   }
 }
