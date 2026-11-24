@@ -1,0 +1,17 @@
+{
+  "name": "@grafikr/shopify-app-session-storage-prisma",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@grafikr/shopify-app-remix": "link:../shopify-app-remix"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
