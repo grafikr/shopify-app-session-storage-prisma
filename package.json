@@ -1,6 +1,5 @@
 {
   "name": "@grafikr/shopify-app-session-storage-prisma",
-  "private": true,
   "type": "module",
   "exports": {
     ".": "./src/index.ts"
