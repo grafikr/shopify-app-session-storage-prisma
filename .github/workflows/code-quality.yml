@@ -69,7 +69,7 @@ jobs:
             {
               source: {name: "Format"},
               diagnostics: [
-                inputs | select(length > 0 and (test("need formatting|^Checked ") | not)) |
+                inputs | select(length > 0 and (test("need formatting|^Checked |files? (is|are) formatted") | not)) |
                 {
                   message: "File is not formatted. Run `bun fmt` to fix.",
                   location: {
