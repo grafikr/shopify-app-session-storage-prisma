@@ -1,6 +1,6 @@
 {
   "name": "@grafikr/shopify-app-session-storage-prisma",
-  "version": "1.0.0-test.0",
+  "version": "1.0.0-test.1",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
